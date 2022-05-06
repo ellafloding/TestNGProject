@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listeners">
+        </listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Math Test">
+
+        <groups>
+            <run>
+                <include name="basic"/>
+                <include name="advanced"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="FirstTestCase">
+            </class>
+        </classes>
+
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Annotation test">
+
+        <classes>
+            <class name="TestAnnotations">
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
+
